@@ -1,41 +1,61 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+    <title>South Bay Autohaus | San Diego Mercedes-Benz</title>
+    
+    <!-- Canonical for duplicate site posting -->
+    <link rel="canonical" href="https://www.autohaussouthbay.com">
 
     <!-- Bootstrap core CSS -->
     <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b93121e708.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="assets/css/cover.css" rel="stylesheet">
+
   </head>
 
 <body class="text-center" style="background-color: #FFFFFF">
 
     <div class="container-fluid" style="background-color:#0B2A75; color: #FFFFFF">
       <div class="row">
-          <div class="col-4">
+          <div class="col">
             <h3>CALL TODAY!</h3>
             <h1>(619)422-6252</h1>
             <p>Independent Mercedes-Benz Service, Sales, Parts &amp; Repair</p>
           </div>
-          <div class="col-4 text-center">
+          <div class="col text-center">
             <h1>LOGO</h1>
           </div>
-          <div class="col-4">
+          <div class="col">
             <p>Independent Mercedes-Benz Specialist Celebrating Over 25 Years</p>
-            <p>Shop Hours: Monday - Friday: 7:30 AM - 5:00 PM</p>
-            <p>24hr Drop Off & Pick Up Available For Your Convenience</p>
+            <p>Shop Hours:</p> 
+            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
+            <p>24hr Drop Off &amp; Pick Up Available For Your Convenience</p>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </div>
+                <div class="col">
+                  <i class="fab fa-yelp fa-2x"></i>
+                </div>
+                <div class="col">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
@@ -47,18 +67,40 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">Schedule Online</a>
-            <a class="nav-link" href="#">Pre-Owned</a>
+            <!--<a class="nav-link" href="#">Pre-Owned</a> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Mercedes-Benz Repair</a>
+                  <a class="dropdown-item" href="#">Mercedes-Benz Service</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Mercedes-Benz A &amp; B Service</a>
+                  <a class="dropdown-item" href="#">Mercedes-Benz Auto Parts</a>
+                </div>
+            </li>
             <a class="nav-link" href="#">Services</a>
             <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="#">Blog</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Contacts Us</a>
+                  <a class="dropdown-item" href="#">Directions</a>
+                  <a class="dropdown-item" href="#">Reviews</a>
+                  <a class="dropdown-item" href="#">Staff</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Social Media</a>
+                  <a class="dropdown-item" href="#">Newsletter</a>
+                  <a class="dropdown-item" href="#">Careers</a>
+                </div>
+            </li>
+           <!-- <a class="nav-link" href="#">Blog</a> -->
           </nav>
         </div>
       </header>
   </div>
 
-<!-- Singular Main element for DOM -->
-<main> <!-- Select Location -->
-<div class="jumbotron jumbotron-fluid">
+
+<div class="jumbotron jumbotron-fluid mb-0">
   <div class="container">
     <h1 class="cover-heading">South Bay Autohaus Mercedes-Benz</h1>
       <p class="lead">We Offer A Free Complimentary 45 Point Inspection Of Your Mercedes-Benz</p>
@@ -68,55 +110,91 @@
   </div>
 </div>
 
-      <div class="container-fluid" style="background-color: #183D96">
-        <h3 class="text-center">Contact Us</h3>
 
-        <form>
-          <div class="form-group">
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-          </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
+
+
+<div class="banner-img container-fluid">
+  <header class="masthead mb-auto p-2">
+          <h3>Contact Us</h3>
+        </header>
+
+  <form>
+    <div class="form-group row justify-content-center">
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="formName" placeholder="Name">
+      </div>
+    </div>
+    <div class="form-group row justify-content-center">
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="formEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group row justify-content-center">
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="formPhone" placeholder="Phone">
+      </div>
+    </div>
+    <div class="form-group row justify-content-center">
+      <div class="col-sm-6">
+        <textarea class="form-control" rows="6" id="formComment" placeholder="Message"></textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary mb-3">Contact Us</button>
+  </form>
 
           <div class="row">
 
-            <div class="col-4" style="border-style: solid; border-width: 8px 4px 8px 0px; border-color: #FFFFFF">
-              <p><b>We Are San Diego's Most Trusted Mercedes-Benz Service &amp; Repair Center</b></p>
+            <div class="col" style="border-style: solid; border-width: 8px 4px 8px 0px; border-color: #FFFFFF">
+              <p class="pt-2"><b>We Are San Diego's Most Trusted Mercedes-Benz Service &amp; Repair Center</b></p>
               <p>Learn About Servicing Your Vehicle Under Factory Warranty</p>
-              <a href="#" class="btn btn-lg btn-secondary">Learn More</a>
+              <a href="#" class="btn btn-lg btn-secondary m-2">Learn More</a>
             </div>
 
-            <div class="col-4" style="border-style: solid; border-width: 8px 4px 8px 4px; border-color: #FFFFFF">
-              <p><b>Our Customers Are Talking</b></p>
-              <a href="#" class="btn btn-lg btn-secondary">Reviews</a>
+            <div class="col" style="border-style: solid; border-width: 8px 4px 8px 4px; border-color: #FFFFFF">
+              <p class="pt-2"><b>Our Customers Are Talking</b></p>
+              <a href="#" class="btn btn-lg btn-secondary m-2">Reviews</a>
             </div>
 
-            <div class="col-4" style="border-style: solid; border-width: 8px 0px 8px 4px; border-color: #FFFFFF">
-              <p><b>Schedule An Appointment</b></p>
-              <a href="#" class="btn btn-lg btn-secondary">Schedule Now</a>
+            <div class="col" style="border-style: solid; border-width: 8px 0px 8px 4px; border-color: #FFFFFF">
+              <p class="pt-2"><b>Schedule An Appointment</b></p>
+              <a href="#" class="btn btn-lg btn-secondary m-2">Schedule Now</a>
             </div>
         </div>
-      </div>
+</div>
+
+
+
 
       <div class="container-fluid" style="background-color: #13275A; color: #FFFFFF">
-        <header class="masthead mb-auto">
+        <header class="masthead mb-auto p-2">
           <h3>Why Chose Us?</h3>
         </header>
-          <p>Small points</p>
-          <p><b>We Are San Diego's Most Trusted Mercedes-Benz Service &amp; Repair Center</b></p>
-          <p>Learn About Servicing Your Vehicle Under Factory Warranty</p>
+        <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Point One</p>
+            <!-- Change Margin or Padding of div -->
+            <div class="float-right"><i class="fas fa-grip-lines-vertical fa-2x"></i></div>
+          </div>
+          <div class="col">
+            <p>Point Two</p>
+            <div class="float-right"><i class="fas fa-grip-lines-vertical fa-2x"></i></div>
+          </div>
+          <div class="col">
+            <p>Point Three</p>
+            <div class="float-right"><i class="fas fa-grip-lines-vertical fa-2x"></i></div>
+          </div>
+        </div>
+      </div>
       </div>
 
 <div class="container-fluid" style="background-color: #C0392B">
-  <h3>Customer Reviews</h3>
-
+  <header class="masthead mb-auto p-2">
+          <h3>Customer Reviews</h3>
+        </header>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <!--<img src="..." class="d-block w-100" alt="..."> -->
       <p>Customer Review One</p>
     </div>
     <div class="carousel-item">
@@ -138,99 +216,86 @@
 </div>
 
 
-  <div class="container-fluid">
-    <header class="masthead mb-auto">
-      <h3>San Diego Mercedes-Benz Repair For Over 25 Years</h3>
-        </header>
-          <p>South Bay Autohaus is the leading Independent Service & Repair Facility for Mercedes Benz Vehicles in San Diego. We offer quality Sales, Parts, Service & Repair. We have been family owned for over 20 years and have serviced San Diego Mercedes Benz owners with a commitment to trust, integrity and honesty.</p>
-          <p>Our Mercedes-Benz vehicle technicians are highly trained and skilled to perform all maintenance and service work. Our in-house parts department allows us to complete your Mercedes Benz service often the same day for your convenience.</p>
-          <p>Our selection of Pre-Owned Mercedes Benz vehicles are of the highest quality in San Diego. Each vehicle is fully serviced and inspected prior to display on our showroom to meet the highest level of standards and excellence Mercedes Benz owners’ expect.</p>
-          <p>If you are buying a new Mercedes Benz, contact us regarding our trade-in purchase program that will allow you to maximize the value of your previously owned Mercedes Benz.</p>
-          <p>South Bay Autohaus is your Mercedes Benz solution in San Diego. Follow us on our social media channels and subscribe to our newsletter to stay connected to South Bay Autohaus promotions and news.</p>
-  </div>
+<div class="container-fluid">
+  <header class="masthead mb-auto p-2">
+    <h3>San Diego Mercedes-Benz Service &amp; Repair</h3>
+    <h3>For Over 25 Years</h3>
+  </header>
+    <p>South Bay Autohaus is the leading Independent Service &amp; Repair Facility for Mercedes Benz Vehicles in San Diego. We offer quality Sales, Parts, Service & Repair. We have been family owned for over 20 years and have serviced San Diego Mercedes Benz owners with a commitment to trust, integrity and honesty.</p>
+    <p>Our Mercedes-Benz vehicle technicians are highly trained and skilled to perform all maintenance and service work. Our in-house parts department allows us to complete your Mercedes Benz service often the same day for your convenience.</p>
+    <p>Our selection of Pre-Owned Mercedes Benz vehicles are of the highest quality in San Diego. Each vehicle is fully serviced and inspected prior to display on our showroom to meet the highest level of standards and excellence Mercedes Benz owners’ expect.</p>
+    <p>If you are buying a new Mercedes Benz, contact us regarding our trade-in purchase program that will allow you to maximize the value of your previously owned Mercedes Benz.</p>
+    <p>South Bay Autohaus is your Mercedes Benz solution in San Diego. Follow us on our social media channels and subscribe to our newsletter to stay connected to South Bay Autohaus promotions and news.</p>
+</div>
 
-  <div class="container-fluid">
-    <header class="masthead mb-auto">
-      <h3>Subscribe To Our Newsletter</h3>
-    </header>
-      <p>Form</p>
-    </div>
-
-     <!-- <div class="container-fluid">
-        <header class="masthead mb-auto">
-          <h3>Mercedes-Benz Vehicle Service &amp; Repair</h3>
-        </header>
-          <p>As an Independent Mercedes-Benz facility in San Diego, we are able to pass on savings and value to our customers that large franchised Mercedes-Benz dealerships cannot. This allows us to provide the highest level of Mercedes-Benz Service & Repair while building relationships with our customers that allow them to maintain their vehicle like new and save money</p>
-          <p>Our mechanics are trained to perform all maintenance and mechanical repairs. Our technicians are authorized to perform all aspects of your Mercedes-Benz service & repair, including factory required service work while still under warranty.</p>
-          <p>Links to Lists of Services</p>
-          <p>each landing page links to Schedule now</p>
-          <p>button</p>
-        <header class="masthead mb-auto">
-          <h3>Pre-Owned Mercedes-Benz</h3>
-        </header>
-      </div> -->
-
- <!-- <div class="container-fluid">
-      <header class="masthead mb-auto">
-          <h3>South Bay Autohaus Blog</h3>
-        </header> -->
-          
-          <!-- Use article class -->
-         <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <!--<img src="..." class="d-block w-100" alt="..."> -->
-    <!--  <p>Customer Review One</p>
-    </div>
-    <div class="carousel-item">
-      <p>Customer Review Two</p>
-    </div>
-    <div class="carousel-item">
-      <p>Customer Review Three</p>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  </div>
-       <a href="#" class="btn btn-lg btn-secondary">View All</a>
-    </div> -->
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-4">
-        <h3>Review Us On Google</h3>
+<div class="container-fluid">
+  <header class="masthead mb-auto p-2">
+    <h3>Subscribe To Our Newsletter</h3>
+  </header>
+    <form>
+      <div class="row justify-content-center">
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Email">
+        </div>
       </div>
-      <div class="col-4">
-        <h3>Review Us on Yelp</h3>
-      </div>
-      <div class="col-4">
-        <h3>Social Buttons</h3>
-      </div>
+      <button type="submit" class="btn btn-lg btn-primary m-3">Subscribe</button>
+    </form>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <p>Row of Social Media Assets</p>
+    <div class="col">
+      <h3>Review Us On Google</h3>
+      <i class="fab fa-google fa-5x"></i>
+    </div>
+    <div class="col">
+      <h3>Review Us on Yelp</h3>
+      <i class="fab fa-yelp fa-5x"></i>
+    </div>
+    <div class="col">
+      <i class="fab fa-facebook fa-5x"></i>
+      <i class="fab fa-instagram fa-5x"></i>
+      <i class="fab fa-linkedin-in fa-5x"></i>
     </div>
   </div>
-</main>
+</div>
 
-<footer class="mastfoot mt-auto" style="background-color: #0B2A75; color: #FFFFFF; bottom: 0">
+<footer class="mastfoot mt-auto mb-0" style="background-color: #0B2A75; color: #FFFFFF">
   <div class="inner">
-    <p class="text-center">All Links</p>
+    <p class="text-center">All Navigation Links</p>
   </div>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col">
         <h1>LOGO</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <i class="fab fa-facebook fa-2x"></i>
+            </div>
+            <div class="col">
+              <i class="fab fa-yelp fa-2x"></i>
+            </div>
+            <div class="col">
+              <i class="fab fa-instagram fa-2x"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-4">
+      <div class="col">
         <h1>South Bay Autohaus</h1>
-        <p>address</p>
+        <p>310 Trousdale Lane, Suite D.</p>
+        <p>Chula Vista, CA</p>
+        <p>91910</p>
       </div>
-      <div class="col-4">
+      <div class="col">
         <p>(619)422-6252</p>
+        <p>Contact@autohaussouthbay.com</p>
       </div>         
     </div>
   </div>

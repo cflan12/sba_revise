@@ -14,3 +14,25 @@
   background-size: cover;
   height: 100vh;
 }
+
+.banner-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+/* CSS Psuedo element */
+.banner-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, red, blue);
+  opacity: 0.6;
+}
