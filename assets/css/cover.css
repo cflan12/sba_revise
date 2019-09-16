@@ -6,13 +6,54 @@
   background-size: cover;
 } */
 
+hr.style1{
+  border-top: 1px solid #8c8b8b;
+}
+
+.header-container {
+
+}
+
+.cover-container 
+{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-style: solid; 
+  border-width: 0px 0px 8px 0px; 
+  border-color: #FFFFFF;
+}
+
 .jumbotron {
-  color: white;
+  /*color: white;
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;  */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+}
+
+.jumbotron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.jumbotron-container {
+  position: relative;
+  z-index: 10;
 }
 
 /* CSS file is referencing image directory */
@@ -35,7 +76,7 @@
   width: 100%;
   height: 100%;
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); 
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: 1;
 }
 
@@ -74,6 +115,7 @@
 .city-content {
   position: relative;
   z-index: 10;
+  color: #FFFFFF;
 }
 
 .review-gradient {
@@ -86,3 +128,43 @@
 .about-gradient {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+
+blockquote {
+position: relative;
+  display: inline-block;
+  background: #eee;
+  padding: 40px 30px 30px 60px;
+  border-radius: 10px;
+ /* font-family: 'Bitter', serif; */
+  color: #333;
+  text-align: left;
+  
+  box-shadow: 1px 1px 1px #999,
+              2px 2px 1px #999,
+              3px 3px 1px #999;
+    
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #ccc;
+      z-index: 1;
+    }
+  }
+
+  .social-wrapper {
+    border-style: solid; 
+    border-width: 8px 0px 8px 0px; 
+    border-color: #000000;
+  }
+
+footer {
+  background-color: #0B2A75; 
+  color: #FFFFFF
+}
+
+  
