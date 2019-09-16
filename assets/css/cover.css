@@ -8,18 +8,19 @@
 
 .jumbotron {
   color: white;
-  background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
+  background-image: url("../img/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
+/* CSS file is referencing image directory */
 .banner-img {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
+  background-image: url("../img/cover.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +34,55 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom right, red, blue);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); 
   opacity: 0.6;
+  z-index: 1;
+}
+
+/* content inside gradient overlay */
+.banner-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* CSS file is referencing image directory */
+.city-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/san-diego.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid; 
+  border-width: 0px 0px 8px 0px; 
+  border-color: #FFFFFF;
+}
+  
+/* CSS Psuedo element */
+.city-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  opacity: 0.6;
+}
+
+.city-content {
+  position: relative;
+  z-index: 10;
+}
+
+.review-gradient {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  border-style: solid; 
+  border-width: 0px 0px 8px 0px; 
+  border-color: #FFFFFF;
+}
+
+.about-gradient {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
