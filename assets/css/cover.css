@@ -6,6 +6,14 @@
   background-size: cover;
 } */
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, li, nav, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 hr.style1{
   border-top: 1px solid #8c8b8b;
 }
@@ -165,6 +173,46 @@ position: relative;
 footer {
   background-color: #0B2A75; 
   color: #FFFFFF
+}
+
+/* Carousel Control Colors */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+/* Google Map */
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
   
